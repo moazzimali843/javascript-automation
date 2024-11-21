@@ -1,0 +1,12 @@
+.stopping {
+    background-color: #dc3545 !important;
+}
+
+#start-automation {
+  transition: background-color 0.3s ease;
+}
+
+input:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}

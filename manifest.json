@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "RezuMatch",
+  "version": "1.0",
+  "description": "Automates job applications on Indeed using Selenium.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "assets/logo.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.indeed.com/*"],
+      "js": ["content_old.js"]
+    }
+  ]
+}
